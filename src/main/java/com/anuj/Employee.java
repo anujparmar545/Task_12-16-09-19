@@ -85,9 +85,11 @@ public class Employee {
 		this.lap = lap;
 	}
 
+
 	@Override
 	public String toString() {
-		return "Employee [eid=" + eid + ", ename=" + ename + ", salary=" + salary + ", vehicle=" + vehicle + "]";
+		return "Employee [eid=" + eid + ", ename=" + ename + ", salary=" + salary + ", vehicle=" + vehicle + ", lap="
+				+ lap + "]";
 	}
 
 	public Employee(int eid, String ename, int salary) {

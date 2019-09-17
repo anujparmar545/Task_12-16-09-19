@@ -1,5 +1,8 @@
 package com.anuj;
 
+import java.util.List;
+
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -11,14 +14,14 @@ public class Test1 {
 		SessionFactory sf = Utility.getSF();
 		Session session = sf.openSession();
 		Transaction t=session.beginTransaction();
-		
+		/*
 		Employee e1=new Employee(101, "Anuj", 24218,new Vehicle(203),new Laptop(303));
 		Employee e2=new Employee(102, "Ankur", 56818,new Vehicle(201),new Laptop(302));
 		Employee e3=new Employee(103, "Hero", 87456,new Vehicle(202),new Laptop(301));
 		
 		session.save(e1); session.save(e2); session.save(e3);
 		
-		/*
+
 		 Employee e1=new Employee(101, "Anuj", 24218);
 		Employee e2=new Employee(102, "Ankur", 56818);
 		Employee e3=new Employee(103, "Hero", 87456);
